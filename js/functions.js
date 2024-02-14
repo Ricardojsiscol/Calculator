@@ -22,7 +22,7 @@ function equalSymbolEventListener(operands){
 		if (!operands.num1){
 			return ;
 		}
-		operands.num2 = document.getElementById('input').value;
+		operands.num2 = parseFloat(document.getElementById('input').value);
 		document.getElementById('input').value = operate(operands);
 		operands.num1 = '';
 		operands.num2 = '';
@@ -55,7 +55,7 @@ function operatorEventListener(operands){
 					operands.num1 = parseFloat(input.value);
 				else if (operands.num2 == ''){
 					operands.num2 = parseFloat(input.value);
-					operands.num1 = operate(operands);
+					operands.num1 = parseFloat(operate(operands));
 					input.value = operands.num1;
 					operands.operator = operator.textContent;
 					operands.num2 = '';
