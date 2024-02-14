@@ -6,7 +6,7 @@ const divide = (num1, num2) => {
 	if (num2 == 0)
 		return 'Not allowed!';
 	else
-		num1 / num2;}
+		return num1 / num2;}
 
 //Handles event listener related to calculator input's behaviour
 function inputEventListener(){
